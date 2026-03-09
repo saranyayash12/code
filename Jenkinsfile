@@ -11,14 +11,14 @@ pipeline {
 
         stage('Build Spring Boot') {
             steps {
-                sh 'cd backend && mvn clean package'
+                sh 'cd BACKEND && mvn clean package'
             }
         }
 
         stage('Build React') {
             steps {
-                sh 'cd frontend && npm install'
-                sh 'cd frontend && npm run build'
+                sh 'cd FRONTEND && npm install'
+                sh 'cd FRONTEND && npm run build'
             }
         }
 

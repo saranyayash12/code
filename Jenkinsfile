@@ -7,7 +7,7 @@ stages {
     stage('Build Spring Boot') {
         steps {
             sh '''
-            cd BACKEND
+            cd BACKEND/watch
             mvn clean package
             '''
         }

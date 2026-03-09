@@ -13,16 +13,6 @@ stages {
         }
     }
 
-    stage('Build React') {
-        steps {
-            sh '''
-            cd FRONTEND
-            npm install
-            npm run build
-            '''
-        }
-    }
-
     stage('Build Docker Images') {
         steps {
             sh 'docker compose build'

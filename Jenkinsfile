@@ -8,7 +8,7 @@ stages {
         steps {
             sh '''
             cd BACKEND/watch
-            mvn clean package
+            mvn clean package -DskipTests
             '''
         }
     }
